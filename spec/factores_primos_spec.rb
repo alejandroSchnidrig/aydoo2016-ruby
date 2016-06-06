@@ -1,11 +1,24 @@
 require 'rspec' 
 require_relative '../model/factores_primos'
 
-describe 'Foo' do
+ describe 'factores_primos' do
 
-  it 'should return foo when do_foo' do
-    foo = Factores_primos.new
-    expect(foo.do_foo).to eq 'foo'
+  it 'calcula factores primos de 8 correctamente' do
+    factor = Factores_primos.new
+    expect(factor.calcular(8)).to match_array([2, 2, 2])
   end
 
+  it 'calcula factores primos de 58 correctamente' do
+    factor = Factores_primos.new
+    expect(factor.calcular(58)).to match_array([2, 29])
+  end
+
+  it 'calcula factores primos de 90 correctamente' do
+    factor = Factores_primos.new
+    expect(factor.calcular(90)).to match_array([2, 3, 3, 5])
+  end
+	
+
 end
+	
+
