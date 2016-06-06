@@ -1,4 +1,4 @@
-class Foo
+class Factores_primos
 
   def do_foo
     'foo'
