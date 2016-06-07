@@ -1,0 +1,7 @@
+class factoresPrimos
+
+  def do_foo
+    'foo'
+  end
+
+end
