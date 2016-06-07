@@ -1,4 +1,6 @@
-class Factores_primos
+class FactoresPrimos
+
+  def initialize;end	
 
   def calcular(numero)
     divisores = Array.new
