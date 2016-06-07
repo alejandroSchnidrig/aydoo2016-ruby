@@ -16,5 +16,21 @@ describe 'impresora' do
     impresora = Impresora.new
     expect(impresora.formato_quiet(mi_array)).to eq(resultado)
   end
+
+  it 'imprime en formato pretty orden descendente correctamente' do
+    mi_array = [2, 2, 2, 3]
+    resultado = "3 2 2 2 "
+    impresora = Impresora.new
+    impresora.descendente(mi_array)
+    expect(impresora.formato_pretty(mi_array)).to eq(resultado)
+  end
+
+  it 'imprime en formato quiet orden descendente correctamente' do
+    mi_array = [2, 2, 5, 5]
+    resultado = "5\n5\n2\n2\n"
+    impresora = Impresora.new
+    impresora.descendente(mi_array)	
+    expect(impresora.formato_quiet(mi_array)).to eq(resultado)
+  end
 			
 end

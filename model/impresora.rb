@@ -15,5 +15,13 @@ class Impresora
     end
     resultado
   end
- 
+
+  def descendente(array)
+   array.reverse!
+  end
+
+  def ascendente(array)
+    array
+  end	
+		 
 end
