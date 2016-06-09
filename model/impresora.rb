@@ -1,11 +1,11 @@
 class Impresora
-  
+	  
   def formato_pretty(array)
     resultado = ""
     array.each do |numero|
       resultado += numero.to_s + " " 
     end
-    resultado
+    "Factores primos #{array.inject(:*)}: #{resultado}"	
   end
 
   def formato_quiet(array)
@@ -13,7 +13,7 @@ class Impresora
     array.each do |numero|			
       resultado += numero.to_s + "\n"
     end
-    resultado
+    "Factores primos #{array.inject(:*)}:\n#{resultado}"		
   end
 
   def descendente(array)
@@ -23,5 +23,9 @@ class Impresora
   def ascendente(array)
     array
   end	
+
+  def get_resultado
+    @resultado
+  end
 		 
 end
