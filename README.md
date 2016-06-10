@@ -13,5 +13,5 @@ Usage:
 1. Install dependencies: _bundle install_
 2. Run test: _rake_
 
-To use Guard, just run: _guard_.
+To use Guard, just Run: _guard_.
 
